@@ -7,7 +7,7 @@ if (WRA_API_ID == null) {
 
 @file_get_contents("http://www.google.com") or exit("\033[0;31mError (2): \033[0mNo active internet connection detected!\n");
 
-// Detects if Samantha voice is installed
+// Detects if the Apple voice Samantha voice is installed
 $voices = shell_exec("/usr/bin/say -v ?");
 if (strpos($voices, "Samantha") != null) {
         $voice = "-v Samantha ";
